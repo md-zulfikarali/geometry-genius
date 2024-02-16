@@ -117,11 +117,14 @@
                   <h2 class="card-title">Ellipse</h2>
                   <p>Area (A) = pi x a x b </p>
                   <div>
-                    <input class="w-24 border-2 rounded-md text-center" type="text" placeholder="a"><span>cm</span>
-                    <input class="w-24 border-2 rounded-md text-center" type="text" placeholder="b"><span>cm</span>
+                    <input id="ellipse-a-input" class="w-24 border-2 rounded-md text-center" type="text" placeholder="a"><span>cm</span>
+                    <input id="ellipse-b-input" class="w-24 border-2 rounded-md text-center" type="text" placeholder="b"><span>cm</span>
+                  </div>
+                  <div class="py-3">
+                    <p class="text-2xl">Area (A): <span id="ellipse-area">0</span><span> cm<sup>2</sup></span></p>
                   </div>
                   <div class="card-actions justify-end">
-                    <button class="btn btn-primary w-full">Calculate</button>
+                    <button onclick="getEllipseAreaById()" class="btn btn-primary w-full">Calculate</button>
                   </div>
                 </div>
               </div>
@@ -137,6 +140,7 @@
     <script src="scripts/parallelogram.js"></script>
     <script src="scripts/pentagon-area.js"></script>
     <script src="scripts/rhombus-area.js"></script>
+    <script src="scripts/ellipse-area.js"></script>
 </body>
 
 </html>

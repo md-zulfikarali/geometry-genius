@@ -3,7 +3,7 @@ function getRhombusAreaById(){
     const rhombusD2 = rhombusInputValueText('rhombus-d2-input');
     const area = 0.5 * rhombusD1 * rhombusD2;
     setRhombusArea('rhombus-area', area);
-    console.log(area);
+    
 }
 
 function rhombusInputValueText(rhombusElementId){
